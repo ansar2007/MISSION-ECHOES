@@ -998,7 +998,6 @@ elif page == "SOURCE":
     st.markdown(
         "<p style='text-align:center; opacity:0.65;'>"
         "RESEARCHED WITH NASA MISSION ARCHIVES"
-        "<br>MISSION: ECHOES | A MELOVERSE PRODUCTION"
         "</p>",
         unsafe_allow_html=True
     )
