@@ -12,7 +12,20 @@ st.set_page_config(
     page_icon="🚀",
     layout="wide"
 )
+# Load external CSS
+def load_css():
+    css_path = Path(__file__).parent / "style.css"
 
+    with open(css_path, "r", encoding="utf-8") as file:
+        css = file.read()
+
+    st.markdown(
+        f"<style>{css}</style>",
+        unsafe_allow_html=True
+    )
+
+# Apply CSS styling
+load_css()
 # ---------------- CUSTOM STYLING ----------------
 
 st.markdown("""
@@ -272,8 +285,13 @@ if "page" in st.query_params:
 columns = st.columns([1.3, 1, 1, 1, 1, 1])
 
 with columns[0]:
-    st.markdown("## 🌌 EBH")
+    logo_path = Path(__file__).parent / "assets" / "images" / "logo.py.jpeg"
+    logo_data = base64.b64encode(logo_path.read_bytes()).decode()
 
+st.markdown(
+    f'<img src="data:image/png;base64,{logo_data}" class="nav-logo">',
+    unsafe_allow_html=True
+)
 navigation = ["HOME", "MOON", "MARS", "QUIZ", "SOURCE"]
 
 for i, section in enumerate(navigation, start=1):
@@ -677,17 +695,13 @@ MISSION_DATA = {
 page = st.session_state.current_page
 
 if page == "HOME":
+    # HOMEPAGE LOGO
 
     st.markdown("""
     <style>
     .home-heading {
-        text-align: center;
-        font-size: 42px;
-        font-weight: 800;
-        letter-spacing: 2px;
-        margin-top: 35px;
-        margin-bottom: 45px;
-    }
+
+    
 
     .mission-card {
         position: relative;

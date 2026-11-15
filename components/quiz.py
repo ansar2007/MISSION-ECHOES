@@ -6,54 +6,56 @@ quiz_data = {
 
     "surveyor_3": [
 
-        {
-            "question": "What was Surveyor 3 designed primarily to demonstrate?",
-            "options": [
-                "a) A crewed lunar landing",
-                "b) A controlled soft landing and surface investigation",
-                "c) A sample return from the Moon",
-                "d) A long-duration lunar orbit"
-            ],
-            "answer": "b) A controlled soft landing and surface investigation",
-            "explanation": (
-                "Surveyor 3 tested a controlled soft landing and "
-                "investigated lunar soil through imaging and "
-                "surface-sampler experiments."
-            )
-        },
+    {
+        "question": "What was Surveyor 3 designed primarily to demonstrate?",
+        "options": [
+            "a) A crewed lunar landing",
+            "b) A controlled soft landing and surface investigation",
+            "c) A sample return from the Moon",
+            "d) A long-duration lunar orbit"
+        ],
+        "answer": "b) A controlled soft landing and surface investigation",
+        "explanation": (
+            "Surveyor 3 tested a controlled soft landing and "
+            "investigated lunar soil through imaging and "
+            "surface-sampler experiments."
+        )
+    },
 
-        {
-            "question": "What was Surveyor 3 designed primarily to demonstrate?",
-            "options": [
-                "a) A crewed lunar landing",
-                "b) A controlled soft landing and surface investigation",
-                "c) A sample return from the Moon",
-                "d) A long-duration lunar orbit"
-            ],
-            "answer": "b) A controlled soft landing and surface investigation",
-            "explanation": (
-                "Surveyor 3 tested a controlled soft landing and "
-                "investigated lunar soil through imaging and "
-                "surface-sampler experiments."
-            )
-        },
+    {
+        "question": "Which instrument capability helped Surveyor 3 investigate the mechanical properties of lunar soil?",
+        "options": [
+            "a) A deep-space radio telescope",
+            "b) A remotely operated surface sampler",
+            "c) A seismometer network",
+            "d) A high-altitude weather balloon"
+        ],
+        "answer": "b) A remotely operated surface sampler",
+        "explanation": (
+            "Surveyor 3's surface sampler dug trenches and performed "
+            "tests on the lunar soil, helping characterize its "
+            "mechanical behaviour."
+        )
+    },
 
-        {
-            "question": "On which lunar surface feature did NASA's Surveyor 3 successfully land in April 1967?",
-            "options": [
-                "a) Oceanus Procellarum (Ocean of Storms)",
-                "b) Mare Crisium (Sea of Crises)",
-                "c) Mare Tranquillitatis (Sea of Tranquility)",
-                "d) Mare Imbrium (Sea of Rains)"
-            ],
-            "answer": "a) Oceanus Procellarum (Ocean of Storms)",
-            "explanation": (
-                "Surveyor 3 landed in Oceanus Procellarum, "
-                "the same broad lunar region later visited by Apollo 12."
-            )
-        }
+    {
+        "question": "On which lunar surface feature did NASA's Surveyor 3 successfully land in April 1967?",
+        "options": [
+            "a) Oceanus Procellarum (Ocean of Storms)",
+            "b) Mare Crisium (Sea of Crises)",
+            "c) Mare Tranquillitatis (Sea of Tranquility)",
+            "d) Mare Imbrium (Sea of Rains)"
+        ],
+        "answer": "a) Oceanus Procellarum (Ocean of Storms)",
+        "explanation": (
+            "Surveyor 3 landed in Oceanus Procellarum, "
+            "the same broad lunar region later visited by Apollo 12."
+        )
+    }
 
-    ],
+],
+
+    
 
 
     # ======================================

@@ -1,0 +1,306 @@
+/* ==============================
+   MISSION: ECHOES — GLOBAL THEME
+================================ */
+
+:root {
+    --background: #050B18;
+    --secondary: #0B1730;
+    --card: #101F3A;
+    --primary: #168BFF;
+    --cyan: #42D9FF;
+    --white: #FFFFFF;
+    --muted: #A9B8CC;
+}
+
+/* Entire website */
+.stApp {
+    background-color: var(--background);
+    color: var(--white);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main content container */
+.block-container {
+    max-width: 1250px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--white) !important;
+    font-weight: 700 !important;
+}
+
+/* Paragraphs */
+p {
+    color: var(--muted);
+}
+
+/* ==============================
+   WEBSITE TITLE
+================================ */
+
+.main-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+/* ==============================
+   NAVIGATION BUTTONS
+================================ */
+
+div.stButton > button {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 4px;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+div.stButton > button:hover {
+    color: var(--cyan);
+    border-bottom: 2px solid var(--cyan);
+    background: transparent;
+}
+
+/* ==============================
+   MISSION CARDS
+================================ */
+
+.mission-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #454545;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.mission-card:hover {
+    border-color: var(--cyan);
+    transform: translateY(-4px);
+}
+
+.mission-card-image {
+    height: 190px;
+    background: linear-gradient(135deg, #202A38, #394653);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.mission-card-image img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mission-card:hover .mission-card-image img {
+    transform: scale(1.07);
+}
+
+.mission-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mission-card:hover .mission-card-overlay {
+    opacity: 1;
+}
+
+.mission-card-overlay span {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.mission-card-content {
+    padding: 18px;
+}
+
+.mission-card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 23px;
+}
+
+.mission-card-content p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.image-placeholder {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B8C5D3;
+    letter-spacing: 3px;
+}
+
+/* ==============================
+   MISSION DETAIL PAGES
+================================ */
+
+.mission-detail-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 850;
+    letter-spacing: 3px;
+    margin: 35px 0;
+}
+
+.mission-section-title {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 45px 0 22px;
+}
+
+.video-placeholder {
+    min-height: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #101923, #293847);
+    border: 1px solid #526171;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d5e0eb;
+    padding: 25px;
+}
+
+.video-placeholder .play-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.mission-overview {
+    background: rgba(100, 120, 140, 0.10);
+    border: 1px solid rgba(160, 180, 200, 0.25);
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 300px;
+    height: 100%;
+}
+
+.timeline-image {
+    min-height: 180px;
+    background: linear-gradient(135deg, #182432, #354454);
+    border: 1px solid #526171;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c7d2df;
+    padding: 15px;
+}
+
+.timeline-entry {
+    padding: 18px 0;
+}
+
+.mission-action {
+    border: 1px solid rgba(150, 180, 210, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ==============================
+   GENERAL ELEMENTS
+================================ */
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+a {
+    color: var(--cyan) !important;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+/* SPACE BACKGROUND */
+.stApp {
+    background:
+        radial-gradient(
+            ellipse at 15% 20%,
+            rgba(75, 45, 150, 0.45),
+            transparent 45%
+        ),
+        radial-gradient(
+            ellipse at 85% 15%,
+            rgba(40, 130, 200, 0.35),
+            transparent 45%
+        ),
+        radial-gradient(
+            ellipse at 50% 90%,
+            rgba(90, 65, 180, 0.30),
+            transparent 55%
+        ),
+        #050B18 !important;
+
+    background-attachment: fixed !important;
+}
+.stButton > button:hover {
+    transform: translateY(-3px) !important;
+
+    background: linear-gradient(
+        110deg,
+        #42d9ff,
+        #9875ff
+    ) !important;
+
+    color: #080d20 !important;
+    -webkit-text-fill-color: #080d20 !important;
+
+    border: 1px solid #ffffff !important;
+
+    font-weight: 800 !important;
+    opacity: 1 !important;
+
+    box-shadow:
+        0 0 10px rgba(66, 217, 255, 0.35),
+        0 0 18px rgba(152, 117, 255, 0.25) !important;
+}
+.nav-logo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 18px rgba(66, 217, 255, 0.4);
+}
